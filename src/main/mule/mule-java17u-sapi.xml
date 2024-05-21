@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd">
+	<flow name="mule-java17u-sapiFlow" doc:id="f309e6de-b401-47cd-8049-3ef6274f7155" >
+		<scheduler doc:name="Scheduler" doc:id="eb6d54a8-87df-481d-a516-305f3284a051" >
+			<scheduling-strategy >
+				<fixed-frequency frequency="10" timeUnit="SECONDS"/>
+			</scheduling-strategy>
+		</scheduler>
+		<logger level="INFO" doc:name="Logger" doc:id="e4457157-f04f-4de2-9f25-80feed3ac32e" message="API started"/>
+	</flow>
+</mule>
